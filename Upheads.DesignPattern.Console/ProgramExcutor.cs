@@ -26,6 +26,7 @@ namespace Upheads.DesignPattern.Consoles
                 Console.WriteLine($"{executor.Key}. {executor.Value.Name}");
             }
 
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{ExitCode}. Quit");
         }
 
@@ -58,6 +59,7 @@ namespace Upheads.DesignPattern.Consoles
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("\n\nExecution results can be found above. Press ENTER to continue.");
             Console.ReadLine();
+            Console.Clear();
             Console.ResetColor();
         }
     }
