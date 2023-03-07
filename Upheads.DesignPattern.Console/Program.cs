@@ -11,7 +11,7 @@ while (!ProgramExcutor.IsTerminationRequested(out string? choice))
         Console.WriteLine("Please choose one of the following options!");
         continue;
     }
-
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
     Executors[choiceKey].Execute();
     ProgramExcutor.WaitForContinuationSignal();
 }

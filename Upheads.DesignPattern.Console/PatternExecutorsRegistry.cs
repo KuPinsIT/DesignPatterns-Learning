@@ -5,15 +5,6 @@ using Upheads.DesignPattern.Library.StructuralPatterns.Decorator;
 
 namespace Upheads.DesignPattern.Consoles
 {
-    public class ClearConsoleExecutor : PatternExecutor
-    {
-        public override string Name => "Clear";
-        public override void Execute()
-        {
-            Console.Clear();
-        }
-    }
-
     public class PatternExecutorsRegistry
     {
         private static PatternExecutorsRegistry? _instance;
@@ -27,7 +18,6 @@ namespace Upheads.DesignPattern.Consoles
             new BuilderExecutor(),
             new DecoratorExecutor(),
             new StateExecutor(),
-            new ClearConsoleExecutor()
         };
 
             var serialNumber = 1;
