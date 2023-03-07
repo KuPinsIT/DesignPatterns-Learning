@@ -28,7 +28,7 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder.CustomCompany
 
         public override void PrepareDiscount()
         {
-            _company.DiscountType = DiscountType.Standard;
+            _company.DiscountType = DiscountType.Percentage;
         }
 
         public override void ApplyPaymentMethods()

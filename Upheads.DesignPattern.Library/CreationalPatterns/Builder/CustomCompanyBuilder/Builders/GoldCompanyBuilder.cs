@@ -28,7 +28,7 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder.CustomCompany
 
         public override void PrepareDiscount()
         {
-            _company.DiscountType = DiscountType.Gold;
+            _company.DiscountType = DiscountType.FixedAmount;
         }
 
         public override void ApplyPaymentMethods()

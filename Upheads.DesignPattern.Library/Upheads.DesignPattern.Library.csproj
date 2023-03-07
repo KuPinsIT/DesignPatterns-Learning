@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Upheads.DesignPattern.BuildingBlocks\Upheads.DesignPattern.BuildingBlocks.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="BehavioralPatterns\Strategy\DiscountStrategy\Models\" />
+  </ItemGroup>
+
 </Project>
