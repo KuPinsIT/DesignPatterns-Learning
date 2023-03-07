@@ -28,7 +28,7 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder
             director = new CompanyDirector(gold);
             CreateAndDisplayCompany(director);
 
-            // This is not common to see, but it is possible to change builder if necessary.
+            //This is not common to see, but it is possible to change builder if necessary.
             director.ChangeBuilder(platinum);
             CreateAndDisplayCompany(director);
         }
