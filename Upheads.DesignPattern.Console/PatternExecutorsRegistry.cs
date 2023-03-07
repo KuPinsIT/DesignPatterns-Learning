@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Upheads.DesignPattern.BuildingBlocks;
+﻿using Upheads.DesignPattern.BuildingBlocks;
+using Upheads.DesignPattern.Library.BehavioralPatterns.State;
 using Upheads.DesignPattern.Library.CreationalPatterns.Builder;
+using Upheads.DesignPattern.Library.StructuralPatterns.Decorator;
 
 namespace Upheads.DesignPattern.Consoles
 {
+    public class ClearConsoleExecutor : PatternExecutor
+    {
+        public override string Name => "Clear";
+        public override void Execute()
+        {
+            Console.Clear();
+        }
+    }
 
     public class PatternExecutorsRegistry
     {
@@ -18,14 +23,17 @@ namespace Upheads.DesignPattern.Consoles
         {
             var patternExecutors = new List<PatternExecutor>
         {
+            new FactoryMethodExecutor(),
             new BuilderExecutor(),
-            //new RestaurantManagement.Executor()
+            new DecoratorExecutor(),
+            new StateExecutor(),
+            new ClearConsoleExecutor()
         };
 
             var serialNumber = 1;
             _executors = new SortedDictionary<int, PatternExecutor>();
 
-            foreach (var executor in patternExecutors.OrderBy(pattern => pattern.Name))
+            foreach (var executor in patternExecutors)
             {
                 _executors.Add(serialNumber++, executor);
             }
