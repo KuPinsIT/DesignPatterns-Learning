@@ -16,24 +16,28 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder.CustomCompany
     /// </summary>
     public class StandardCompanyBuilder : CompanyBuilder
     {
-        public override void CreateNewCompany()
+        public override CompanyBuilder PrepareInformation()
         {
             _company = new Company("Standard", "STANDARD12345", "0123456789", "standard@standard.no");
+            return this;
         }
 
-        public override void PrepareClass()
+        public override CompanyBuilder PrepareClass()
         {
-            _company.CompanyClass = CompanyClass.Standard;
+            _company.SetCompanyClass(CompanyClass.Standard);
+            return this;
         }
 
-        public override void PrepareDiscount()
+        public override CompanyBuilder AppyDiscount()
         {
-            _company.DiscountType = DiscountType.Percentage;
+            _company.SetDiscountType(DiscountType.Percentage);
+            return this;
         }
 
-        public override void ApplyPaymentMethods()
+        public override CompanyBuilder ApplyPaymentMethods()
         {
-            _company.AvailablePaymentMethods = new List<PaymentMethod> { PaymentMethod.Cash, PaymentMethod.Debit };
+            _company.SetPaymentMethods(new List<PaymentMethod> { PaymentMethod.Cash, PaymentMethod.Debit });
+            return this;
         }
     }
 }

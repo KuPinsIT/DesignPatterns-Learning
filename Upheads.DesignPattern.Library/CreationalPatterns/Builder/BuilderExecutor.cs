@@ -35,9 +35,7 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder
 
         private static void CreateAndDisplayCompany(CompanyDirector director)
         {
-            director.CreateCompany();
-
-            var company = director.GetCompany();
+            var company = director.BuildCompany();
             company.Display();
         }
     }
