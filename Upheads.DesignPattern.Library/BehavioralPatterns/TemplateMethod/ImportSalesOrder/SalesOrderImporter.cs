@@ -31,7 +31,7 @@ namespace Upheads.DesignPattern.Library.BehavioralPatterns.TemplateMethod.Import
 
         public virtual void Save(SalesOrder salesOrder)
         {
-            Console.WriteLine($"Save the sale order {saleOrder.OrderNumer} - {saleOrder.Title}");
+            Console.WriteLine($"Saved the sale order {salesOrder.OrderNumer} - {salesOrder.Title}");
         }
 
         public abstract void CloseFile(ImportFile file);

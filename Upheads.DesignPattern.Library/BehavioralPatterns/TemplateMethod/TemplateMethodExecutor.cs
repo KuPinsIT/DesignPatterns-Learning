@@ -10,6 +10,8 @@ namespace Upheads.DesignPattern.Library.BehavioralPatterns.TemplateMethod
 {
     public class TemplateMethodExecutor : PatternExecutor
     {
+        public override string Name => "Template Method - Behavioral Pattern";
+
         public override void Execute()
         {
             ConsoleExtension.WriteSeparator("Import sales order example");

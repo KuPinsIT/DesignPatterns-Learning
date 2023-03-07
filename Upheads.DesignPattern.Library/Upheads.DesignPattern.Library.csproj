@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="StructuralPatterns\" />
+    <Compile Remove="StructuralPatterns\**" />
+    <EmbeddedResource Remove="StructuralPatterns\**" />
+    <None Remove="StructuralPatterns\**" />
   </ItemGroup>
 
   <ItemGroup>

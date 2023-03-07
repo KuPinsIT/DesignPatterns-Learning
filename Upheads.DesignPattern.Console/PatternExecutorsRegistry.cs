@@ -1,5 +1,6 @@
 ﻿using Upheads.DesignPattern.BuildingBlocks;
 using Upheads.DesignPattern.Library.BehavioralPatterns.State;
+using Upheads.DesignPattern.Library.BehavioralPatterns.TemplateMethod;
 using Upheads.DesignPattern.Library.CreationalPatterns.Builder;
 using Upheads.DesignPattern.Library.StructuralPatterns.Decorator;
 
@@ -17,6 +18,7 @@ namespace Upheads.DesignPattern.Consoles
             new FactoryMethodExecutor(),
             new BuilderExecutor(),
             new DecoratorExecutor(),
+            new TemplateMethodExecutor(),
             new StateExecutor(),
         };
 
