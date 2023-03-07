@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upheads.DesignPattern.Library", "Upheads.DesignPattern.Library\Upheads.DesignPattern.Library.csproj", "{1760F274-C11D-47D6-9899-8BAF463E3A7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upheads.DesignPattern.Library", "Upheads.DesignPattern.Library\Upheads.DesignPattern.Library.csproj", "{1760F274-C11D-47D6-9899-8BAF463E3A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upheads.DesignPattern.BuildingBlocks", "Upheads.DesignPattern.BuildingBlocks\Upheads.DesignPattern.BuildingBlocks.csproj", "{02BA70DE-4818-47E1-907C-8AF15A988E49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upheads.DesignPattern.BuildingBlocks", "Upheads.DesignPattern.BuildingBlocks\Upheads.DesignPattern.BuildingBlocks.csproj", "{02BA70DE-4818-47E1-907C-8AF15A988E49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upheads.DesignPattern.Console", "Upheads.DesignPattern.Console\Upheads.DesignPattern.Console.csproj", "{128CE548-3211-4FE7-B3D3-45F592B5259E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Upheads.DesignPattern.Console", "Upheads.DesignPattern.Console\Upheads.DesignPattern.Console.csproj", "{128CE548-3211-4FE7-B3D3-45F592B5259E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

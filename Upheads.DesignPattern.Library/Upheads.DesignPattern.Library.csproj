@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CreationalPatterns\" />
     <Folder Include="BehavioralPatterns\" />
     <Folder Include="StructuralPatterns\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Upheads.DesignPattern.BuildingBlocks\Upheads.DesignPattern.BuildingBlocks.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Upheads.DesignPattern.BuildingBlocks;
+using Upheads.DesignPattern.Library.CreationalPatterns.Builder;
 
 namespace Upheads.DesignPattern.Consoles
 {
@@ -17,7 +18,7 @@ namespace Upheads.DesignPattern.Consoles
         {
             var patternExecutors = new List<PatternExecutor>
         {
-            //new Greeter.Executor(),
+            new BuilderExecutor(),
             //new RestaurantManagement.Executor()
         };
 
