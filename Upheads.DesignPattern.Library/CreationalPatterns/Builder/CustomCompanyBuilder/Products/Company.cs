@@ -26,9 +26,15 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder.CustomCompany
         public string OrgNumber { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public DiscountType DiscountType { get; set; }
-        public CompanyClass CompanyClass { get; set; }
-        public List<PaymentMethod> AvailablePaymentMethods { get; set; } = new();
+        public DiscountType DiscountType { get; private set; }
+        public CompanyClass CompanyClass { get; private set; }
+        public List<PaymentMethod> AvailablePaymentMethods { get; private set; } = new();
+
+        public void SetDiscountType(DiscountType discountType) => DiscountType = discountType;
+
+        public void SetCompanyClass(CompanyClass companyClass) => CompanyClass = companyClass;
+
+        public void SetPaymentMethods(List<PaymentMethod> paymentMethods) => AvailablePaymentMethods = paymentMethods;
 
         public void Display()
         {

@@ -8,8 +8,8 @@ namespace Upheads.DesignPattern.BuildingBlocks.Commons
 {
     public enum DiscountType
     {
-        Standard = 0,
-        Gold,
-        Platinum
+        Percentage = 0,
+        FixedAmount,
+        ByOneGetOne
     }
 }

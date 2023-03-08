@@ -21,12 +21,12 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder.CustomCompany
         /// this method must be moved to the concrete builder's class.
         /// </summary>
         /// <returns>Company.</returns>
-        public Company GetCompany() => _company;
+        public Company Build() => _company;
 
-        public abstract void CreateNewCompany();
-        public abstract void PrepareClass();
-        public abstract void PrepareDiscount();
-        public abstract void ApplyPaymentMethods();
+        public abstract CompanyBuilder PrepareInformation();
+        public abstract CompanyBuilder PrepareClass();
+        public abstract CompanyBuilder AppyDiscount();
+        public abstract CompanyBuilder ApplyPaymentMethods();
 
     }
 }

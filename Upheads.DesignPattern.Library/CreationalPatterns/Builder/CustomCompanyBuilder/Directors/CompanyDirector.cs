@@ -26,21 +26,15 @@ namespace Upheads.DesignPattern.Library.CreationalPatterns.Builder.CustomCompany
             _builder = newBuilder;
 
         /// <summary>
-        /// Create company with class, using configurations base on this class
+        /// Build company with class, using configurations base on this class
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="orgNumber"></param>
-        /// <param name="phone"></param>
-        /// <param name="email"></param>
-        public void CreateCompany()
+        public Company BuildCompany()
         {
-            _builder.CreateNewCompany();
-            _builder.PrepareClass();
-            _builder.PrepareDiscount();
-            _builder.ApplyPaymentMethods();
+            return _builder.PrepareInformation()
+                .PrepareClass()
+                .AppyDiscount()
+                .ApplyPaymentMethods()
+                .Build();
         }
-
-        public Company GetCompany() =>
-            _builder.GetCompany();
     }
 }
