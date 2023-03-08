@@ -25,7 +25,6 @@
 
                 default:
                     throw new ArgumentException("Invalid type", "type");
-
             }
         }
     }

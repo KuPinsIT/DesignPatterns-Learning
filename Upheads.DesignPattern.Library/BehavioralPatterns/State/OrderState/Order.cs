@@ -1,13 +1,5 @@
 ﻿namespace Upheads.DesignPattern.Library.BehavioralPatterns.State
 {
-    enum OrderStatus
-    {
-        Draft = 0,
-        Confirmed = 1,
-        Canceled = 2,
-        Delivered = 3,
-    }
-
     class Order
     {
         // to reference to current state of the Order.
@@ -57,11 +49,91 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // The con cencept of State DP, that we me must have an object to store the state of Order
 
 
 
-
+    enum OrderStatus
+    {
+        Draft = 0,
+        Confirmed = 1,
+        Canceled = 2,
+        Delivered = 3,
+    }
     class OrderSample
     {
         OrderStatus Status;

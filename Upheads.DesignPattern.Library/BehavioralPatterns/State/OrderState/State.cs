@@ -2,7 +2,7 @@
 {
     // The base State class declares methods that all  State of Order should
     // implement and also provides a backreference to the Order,
-    // any State of Order can use this to transition the state
+    // We use it to keep the current state/status of order
     abstract class State
     {
         protected Order _order;

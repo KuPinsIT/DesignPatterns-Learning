@@ -8,7 +8,7 @@ namespace Upheads.DesignPattern.Library.StructuralPatterns​.Decorator
         public abstract string Send();
     }
 
-    // Handle wrapping all decorators togheter
+    // Handle wrapping all decorators together
     class State : BaseDecorator
     {
         protected BaseDecorator _base;

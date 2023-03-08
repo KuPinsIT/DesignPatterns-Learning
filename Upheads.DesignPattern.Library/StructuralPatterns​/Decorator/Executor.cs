@@ -25,9 +25,9 @@ namespace Upheads.DesignPattern.Library.StructuralPatterns​.Decorator
             Console.WriteLine($"\nEmail & Facebook: {facebook.Send()}");
 
 
-            SMSDecorator sms_facebook = new SMSDecorator(facebook);
+            SMSDecorator email_facebook_sms = new SMSDecorator(facebook);
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine($"\nAll apps: {sms_facebook.Send()}");
+            Console.WriteLine($"\nAll apps: {email_facebook_sms.Send()}");
 
             Console.ReadKey();
         }

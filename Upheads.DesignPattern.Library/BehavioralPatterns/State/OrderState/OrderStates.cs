@@ -2,9 +2,9 @@
 {
     class DraftState : State
     {
-        public override void Canceled()
+        public override void Delivery()
         {
-            Console.ForegroundColor = ConsoleColor.Red; 
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Not allow!");
         }
 
@@ -16,10 +16,12 @@
             this._order.ChangeState(new ConfirmedState());
         }
 
-        public override void Delivery()
+        public override void Canceled()
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Not allow!");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Canceled success!");
+
+            this._order.ChangeState(new CanceledState());
         }
     }
 
